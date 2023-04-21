@@ -1,0 +1,103 @@
+/*Universal*/
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+/*BODY*/
+body{
+   font-family: "Roboto", sans-serif;
+   font-weight: bold;
+   background-color: #799bce;
+   margin: 0;
+   padding: 0;
+}
+/*CONTAINER*/
+.container{
+   width: 100%;
+   max-width: 1030px;
+   padding: 0px 15px;
+   margin: 150px auto;
+}
+/*PLAN CARD*/
+.plan-card__wrapper {
+   display: flex;
+   align-items: flex-start;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.plan-card__item {
+   width: 33.33%;
+   padding: 20px 0px;
+   text-align: center;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.5s ease;
+}
+.plan-card__item:hover{
+   background-color: rgba(0, 0, 0, 0.1);
+}
+.plan-card__icon {
+   width: 100px;
+   height: 100px;
+   margin-bottom: 65px;
+}
+.plan-card__title {
+   color: #8da7e2;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-bottom: 35px;
+}
+.plan-card__text {
+   color: #9c9fa5;
+   line-height: 1.5;
+   margin-bottom: 35px;
+}
+.plan-card__price {
+   color: #799bce;
+}
+.number {
+   position: relative;
+   font-size: 36px;
+}
+.dollar {
+   font-size: 16px;
+   position: absolute;
+   top: 5px;
+   left: -10px;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 1024px) {
+   .plan-card__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .plan-card__item {
+      width: 95%;
+   }
+}
+@media (max-width: 375px) {
+   .plan-card__item {
+      width: 98%;
+   }
+   .plan-card__icon {
+      width: 80px;
+      height: 80px;
+   }
+   .plan-card__title {
+      font-size: 22px;
+   }
+   .plan-card__text{
+      font-style: 14px;
+   }
+   .number {
+      font-size: 32px;
+   }
+   .dollar {
+      font-size: 12px;
+   }
+}
