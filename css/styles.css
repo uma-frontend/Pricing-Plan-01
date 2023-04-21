@@ -7,17 +7,18 @@
 /*BODY*/
 body{
    font-family: "Roboto", sans-serif;
-   font-weight: bold;
    background-color: #799bce;
+   font-size: 13px;
+   line-height: 19px;
    margin: 0;
    padding: 0;
 }
 /*CONTAINER*/
 .container{
    width: 100%;
-   max-width: 1030px;
+   max-width: 930px;
    padding: 0px 15px;
-   margin: 150px auto;
+   margin: 100px auto;
 }
 /*PLAN CARD*/
 .plan-card__wrapper {
@@ -30,7 +31,8 @@ body{
 }
 .plan-card__item {
    width: 33.33%;
-   padding: 20px 0px;
+   padding: 20px 40px;
+   color: #5673D5;
    text-align: center;
    border-radius: 5px;
    cursor: pointer;
@@ -40,37 +42,34 @@ body{
    background-color: rgba(0, 0, 0, 0.1);
 }
 .plan-card__icon {
-   width: 100px;
-   height: 100px;
-   margin-bottom: 65px;
+   width: 70px;
+   height: 70px;
+   margin-bottom: 35px;
 }
 .plan-card__title {
-   color: #8da7e2;
+   font-size: 18px;
+   font-weight: 700;
    text-transform: uppercase;
-   letter-spacing: 2px;
-   margin-bottom: 35px;
+   letter-spacing: 4px;
+   margin-bottom: 20px;
 }
 .plan-card__text {
-   color: #9c9fa5;
-   line-height: 1.5;
-   margin-bottom: 35px;
-}
-.plan-card__price {
-   color: #799bce;
+   color: #A7A7A7;
+   margin-bottom: 20px;
 }
 .number {
-   position: relative;
-   font-size: 36px;
+   font-size: 30px;
+   font-weight: 500;
 }
 .dollar {
-   font-size: 16px;
-   position: absolute;
-   top: 5px;
-   left: -10px;
+   font-size: 14px;
 }
 
 /*MEDIA QUERY*/
 @media (max-width: 1024px) {
+   .container{
+      width: 90%;
+   }
    .plan-card__wrapper {
       display: flex;
       flex-direction: column;
@@ -81,23 +80,27 @@ body{
    }
 }
 @media (max-width: 375px) {
-   .plan-card__item {
+   .container{
       width: 98%;
    }
+   .plan-card__item {
+      width: 98%;
+      padding: 20px 20px;
+   }
    .plan-card__icon {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
    }
    .plan-card__title {
-      font-size: 22px;
+      font-size: 16px;
    }
    .plan-card__text{
-      font-style: 14px;
+      font-style: 12px;
    }
    .number {
-      font-size: 32px;
+      font-size: 26px;
    }
    .dollar {
-      font-size: 12px;
+      font-size: 10px;
    }
 }
